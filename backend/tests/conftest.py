@@ -6,6 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from src.main import app
 from src.infrastructure.database.session import get_db
 from src.domain.models.base import Base
+import src.domain.models  # Pre-load all models into declarative Base
 
 # Use sqlite for tests to keep them fast and isolated
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test.db"

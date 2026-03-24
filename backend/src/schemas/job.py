@@ -17,6 +17,7 @@ class JobResponse(BaseModel):
     notebook_version_id: UUID
     status: str
     execution_backend: str
+    requested_gpu: bool
     started_at: Optional[datetime]
     completed_at: Optional[datetime]
     created_at: datetime

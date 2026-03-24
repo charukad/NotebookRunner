@@ -47,10 +47,10 @@ def create_job(db: Session, job_data: JobCreate, user_id: UUID):
     }
     
     # Ideally the API routes are async, but for sync, we block until published
-    loop = asyncio.get_event_loop()
-    if loop.is_running():
-        asyncio.create_task(publisher.publish("job.execute", payload))
-    else:
+    try:
+        loop = asyncio.get_running_loop()
+        loop.create_task(publisher.publish("job.execute", payload))
+    except RuntimeError:
         asyncio.run(publisher.publish("job.execute", payload))
     
     return db_job
