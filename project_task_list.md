@@ -66,23 +66,18 @@ This document breaks down the NotebookRunner project into manageable development
 
 ## Phase 6: Web Dashboard (React Frontend)
 
-- [ ] Implement generic dashboard layout (Sidebar, TopNav) and Project browsing components.
-- [ ] Ensure frontend state management is configured with TanStack Query and Zustand.
-- [ ] **Git Task 16**: Commit and push UI layouts.
-  - *Command*: `git commit -m "feat(ui): implement dashboard layout, project list, and router" && git push`
-- [ ] Build the "Upload Notebook" Drag-and-Drop page with pre-validation UI feedback.
-- [ ] **Git Task 17**: Commit and push Uploader UI.
-  - *Command*: `git commit -m "feat(ui): build notebook drag-and-drop uploader page" && git push`
-- [ ] Build the **Job Terminal Page**: WebSocket terminal for live streaming logs and a Recharts graph for trailing loss metrics.
-- [ ] **Git Task 18**: Commit and push Live Terminal UI.
-  - *Command*: `git commit -m "feat(ui): implement live job terminal view with charts and streaming logs" && git push`
-- [ ] Build the Model Registry page: Showing downloaded models with active download links and history lineage.
-- [ ] **Git Task 19**: Commit and push Model Registry UI.
-  - *Command*: `git commit -m "feat(ui): add model registry and artifact download capabilities" && git push`
+- [x] Implement generic dashboard layout (Sidebar, TopNav) and Project browsing components.
+- [x] Ensure frontend state management is configured with TanStack Query and Zustand.
+- [x] **Git Task 16**: Commit and push UI layouts. (Skipped per request)
+- [x] Build the "Upload Notebook" Drag-and-Drop page with pre-validation UI feedback.
+- [x] **Git Task 17**: Commit and push Uploader UI. (Skipped per request)
+- [x] Build the **Job Terminal Page**: WebSocket terminal for live streaming logs and a Recharts graph for trailing loss metrics.
+- [x] **Git Task 18**: Commit and push Live Terminal UI. (Skipped per request)
+- [x] Build the Model Registry page: Showing downloaded models with active download links and history lineage.
+- [x] **Git Task 19**: Commit and push Model Registry UI. (Skipped per request)
 
 ## Phase 7: Security, Testing, & Finalization
 
-- [ ] Implement JWT Authentication mechanisms on both Frontend and Backend API endpoints.
-- [ ] Implement Free/Pro tier quota limitations using Redis variables.
-- [ ] **Git Task 20**: Commit and push final security layers.
-  - *Command*: `git commit -m "feat(auth): integrate JWT authentication and user quotas" && git push`
+- [x] Implement JWT Authentication mechanisms on both Frontend and Backend API endpoints.
+- [x] Implement Free/Pro tier quota limitations using Redis variables.
+- [x] **Git Task 20**: Commit and push final security layers. (Skipped per request)
